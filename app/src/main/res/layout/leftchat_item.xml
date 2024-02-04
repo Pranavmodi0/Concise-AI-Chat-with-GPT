@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/botside"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="7dp">
+
+        <TextView
+            android:id="@+id/show_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="7dp"
+            android:layout_toRightOf="@+id/bot"
+            android:background="@drawable/left_chat_bg"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="10dp"
+            android:textIsSelectable="true"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/imageCard"
+            android:layout_width="@dimen/_260sdp"
+            android:visibility="gone"
+            android:layout_height="350dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/left_chat_bg"
+            android:paddingLeft="7dp"
+            android:paddingTop="10dp"
+            android:paddingRight="7dp"
+            android:paddingBottom="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:id="@+id/bot"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/circle"
+                android:padding="5dp"
+                android:src="@drawable/vision"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
